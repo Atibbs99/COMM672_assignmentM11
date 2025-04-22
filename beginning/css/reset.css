@@ -36,8 +36,6 @@ iframe {
     padding: 0 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* display: flex; */
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
@@ -83,20 +81,6 @@ iframe {
     box-shadow: 5px 5px 5px #a7a7a7;
 }
 
-/* .modal {
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    position
-} */
-
 @media (max-width: 768px) {
     .container, .our-team, iframe, .page-title, .wrapper {
         width: 100%;
@@ -107,4 +91,39 @@ iframe {
     h1, h2, p, .h2co {
         text-align: center;
     }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #efefef;
+    margin: 15% auto;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.close-btn {
+    color: #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+}
+
+.modal:target {
+    display: block;
 }
