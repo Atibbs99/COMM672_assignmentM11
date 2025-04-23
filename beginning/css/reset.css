@@ -127,3 +127,19 @@ iframe {
 .modal:target {
     display: block;
 }
+
+.our-team a {
+    text-decoration: none;
+    color: #000;
+}
+
+.calendar {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.calendar iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
