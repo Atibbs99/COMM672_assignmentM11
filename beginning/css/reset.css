@@ -143,3 +143,7 @@ iframe {
     height: 600px;
     border: none;
 }
+
+.map-container {
+    margin-top: 20px;
+}
