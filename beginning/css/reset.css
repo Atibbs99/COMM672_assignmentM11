@@ -147,3 +147,15 @@ iframe {
 .map-container {
     margin-top: 20px;
 }
+
+.feature-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.feature-container ul li::before {
+    content: "\f1b0";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    padding-right: 10px;
+}
