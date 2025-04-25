@@ -6,7 +6,7 @@ html, body {
     overflow-x: hidden;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Nanum Myeongjo, sans-serif;
 }
 
@@ -158,4 +158,50 @@ iframe {
     font-family: "FontAwesome";
     font-weight: 900;
     padding-right: 10px;
+}
+
+.accordion {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-header {
+    display: block;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 15px;
+    text-transform: capitalize;
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #c9c7c7;
+    cursor: pointer;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.accordion-checkbox:checked ~ .accordion-content {
+    max-height: 200px;
+}
+
+.faqs-container {
+    text-align: center;
 }
